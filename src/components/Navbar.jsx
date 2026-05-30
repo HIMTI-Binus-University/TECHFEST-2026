@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -21,41 +22,41 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#0c0e0b] sticky top-0 z-40 w-full font-mono border-b border-white/5">
+      <nav className="bg-[#0c0e0b] sticky top-0 z-40 w-full font-heading border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             
             {/* Logo Section */}
             <div className="flex-shrink-0 flex items-center cursor-pointer overflow-hidden h-20 w-[240px] md:w-[320px]">
-              <a href="/">
+              <Link to="/">
                 <img
                   src={logo}
                   alt="TechFest 2026"
                   className="block h-24 md:h-36 w-auto max-w-none object-contain scale-125 origin-left"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <a 
-                href="/" 
+              <Link 
+                to="/" 
                 className="flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]"
               >
                 HOME
-              </a>
-              <a 
-                href="/competitions" 
+              </Link>
+              <Link 
+                to="/competitions" 
                 className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
               >
                 COMPETITIONS
-              </a>
-              <a 
-                href="/techtalk" 
+              </Link>
+              <Link 
+                to="/techtalk" 
                 className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
               >
                 TECHTALK
-              </a>
+              </Link>
               <a 
                 href="/register" 
                 className="ml-4 text-[#ff0055] border-2 border-[#ff0055] rounded-full px-6 py-2 font-bold tracking-widest text-sm hover:bg-[#ff0055] hover:text-white hover:shadow-[0_0_15px_rgba(255,0,85,0.5)] transition-all duration-300"
@@ -98,36 +99,36 @@ const Navbar = () => {
           <div className="w-14 h-1.5 bg-gray-600 rounded-full"></div>
         </div>
 
-        <div className="px-6 pb-12 pt-4 flex flex-col space-y-2 font-mono">
+        <div className="px-6 pb-12 pt-4 flex flex-col space-y-2 font-body">
           
-          <a 
-            href="/" 
+              <Link 
+            to="/" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 bg-white/5 border-l-2 border-[#00f0ff] rounded-r-lg"
+            className="w-full flex items-center justify-between px-4 py-4 bg-white/5 border-l-2 border-[#00f0ff] rounded-r-lg font-heading"
           >
             <span className="text-[#00f0ff] font-bold tracking-widest text-lg drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]">
               HOME
             </span>
             <span className="text-[#00f0ff]/50 text-sm">01</span>
-          </a>
+          </Link>
           
-          <a 
-            href="/competitions" 
+          <Link 
+            to="/competitions" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all"
+            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
           >
             <span className="font-bold tracking-widest text-lg">COMPETITIONS</span>
             <span className="text-gray-600 text-sm">02</span>
-          </a>
+          </Link>
           
-          <a 
-            href="/techtalk" 
+          <Link 
+            to="/techtalk" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all"
+            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
           >
             <span className="font-bold tracking-widest text-lg">TECHTALK</span>
             <span className="text-gray-600 text-sm">03</span>
-          </a>
+          </Link>
         
           <div className="pt-6">
             <a 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Carme&family=Chivo+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -13,11 +14,12 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-title: 'Orbitron', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Carme', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Chivo Mono', ui-monospace, Consolas, monospace;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font: 18px/145% var(--font-body);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -69,7 +71,7 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
+  font-family: var(--font-heading);
   font-weight: 500;
   color: var(--text-h);
 }
