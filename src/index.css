@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Carme&family=Chivo+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Carme&family=Chivo+Mono:wght@400;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -14,9 +14,9 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --font-title: 'Orbitron', system-ui, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Carme', system-ui, 'Segoe UI', Roboto, sans-serif;
-  --font-body: 'Chivo Mono', ui-monospace, Consolas, monospace;
+  --font-title: "Orbitron", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Carme", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Chivo Mono", ui-monospace, Consolas, monospace;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--font-body);
@@ -111,4 +111,9 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.font-orbitron,
+.font-orbitron * {
+  font-family: var(--font-title);
 }
