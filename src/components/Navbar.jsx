@@ -1,9 +1,22 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  const isActive = (path) => pathname === path;
+
+  const desktopLinkClass = (path) =>
+    isActive(path)
+      ? 'flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]'
+      : 'text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300';
+
+  const mobileLinkClass = (path) =>
+    isActive(path)
+      ? 'w-full flex items-center justify-between px-4 py-4 bg-white/5 border-l-2 border-[#00f0ff] rounded-r-lg font-heading'
+      : 'w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading';
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -41,19 +54,19 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-8">
               <Link 
                 to="/" 
-                className="flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]"
+                className={desktopLinkClass('/')}
               >
                 HOME
               </Link>
               <Link 
                 to="/competitions" 
-                className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
+                className={desktopLinkClass('/competitions')}
               >
                 COMPETITIONS
               </Link>
               <Link 
                 to="/techtalk" 
-                className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
+                className={desktopLinkClass('/techtalk')}
               >
                 TECHTALK
               </Link>
@@ -104,30 +117,30 @@ const Navbar = () => {
               <Link 
             to="/" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 bg-white/5 border-l-2 border-[#00f0ff] rounded-r-lg font-heading"
+            className={mobileLinkClass('/')}
           >
-            <span className="text-[#00f0ff] font-bold tracking-widest text-lg drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]">
+            <span className={`${isActive('/') ? 'text-[#00f0ff] drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]' : ''} font-bold tracking-widest text-lg`}>
               HOME
             </span>
-            <span className="text-[#00f0ff]/50 text-sm">01</span>
+            <span className={`${isActive('/') ? 'text-[#00f0ff]/50' : 'text-gray-600'} text-sm`}>01</span>
           </Link>
           
           <Link 
             to="/competitions" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
+            className={mobileLinkClass('/competitions')}
           >
-            <span className="font-bold tracking-widest text-lg">COMPETITIONS</span>
-            <span className="text-gray-600 text-sm">02</span>
+            <span className={`${isActive('/competitions') ? 'text-[#00f0ff] drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]' : ''} font-bold tracking-widest text-lg`}>COMPETITIONS</span>
+            <span className={`${isActive('/competitions') ? 'text-[#00f0ff]/50' : 'text-gray-600'} text-sm`}>02</span>
           </Link>
           
           <Link 
             to="/techtalk" 
             onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
+            className={mobileLinkClass('/techtalk')}
           >
-            <span className="font-bold tracking-widest text-lg">TECHTALK</span>
-            <span className="text-gray-600 text-sm">03</span>
+            <span className={`${isActive('/techtalk') ? 'text-[#00f0ff] drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]' : ''} font-bold tracking-widest text-lg`}>TECHTALK</span>
+            <span className={`${isActive('/techtalk') ? 'text-[#00f0ff]/50' : 'text-gray-600'} text-sm`}>03</span>
           </Link>
         
           <div className="pt-6">
