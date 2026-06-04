@@ -1,6 +1,24 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
+
+const navItems = [
+  { label: 'HOME', number: '01', to: '/', end: true },
+  { label: 'COMPETITIONS', number: '02', to: '/competitions' },
+  { label: 'TECHTALK', number: '03', to: '/techtalk' },
+];
+
+const getDesktopLinkClass = ({ isActive }) =>
+  isActive
+    ? 'active flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]'
+    : 'text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300';
+
+const getMobileLinkClass = ({ isActive }) =>
+  `w-full flex items-center justify-between px-4 py-4 border-l-2 rounded-r-lg transition-all font-heading ${
+    isActive
+      ? 'active bg-white/5 border-[#00f0ff]'
+      : 'text-gray-400 active:bg-white/5 border-transparent active:border-gray-500'
+  }`;
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,24 +57,16 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link 
-                to="/" 
-                className="flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]"
-              >
-                HOME
-              </Link>
-              <Link 
-                to="/competitions" 
-                className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
-              >
-                COMPETITIONS
-              </Link>
-              <Link 
-                to="/techtalk" 
-                className="text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300"
-              >
-                TECHTALK
-              </Link>
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.end}
+                  className={getDesktopLinkClass}
+                >
+                  {item.label}
+                </NavLink>
+              ))}
               <a 
                 href="/register" 
                 className="ml-4 text-[#ff0055] border-2 border-[#ff0055] rounded-full px-6 py-2 font-bold tracking-widest text-sm hover:bg-[#ff0055] hover:text-white hover:shadow-[0_0_15px_rgba(255,0,85,0.5)] transition-all duration-300"
@@ -100,35 +110,32 @@ const Navbar = () => {
         </div>
 
         <div className="px-6 pb-12 pt-4 flex flex-col space-y-2 font-body">
-          
-              <Link 
-            to="/" 
-            onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 bg-white/5 border-l-2 border-[#00f0ff] rounded-r-lg font-heading"
-          >
-            <span className="text-[#00f0ff] font-bold tracking-widest text-lg drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]">
-              HOME
-            </span>
-            <span className="text-[#00f0ff]/50 text-sm">01</span>
-          </Link>
-          
-          <Link 
-            to="/competitions" 
-            onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
-          >
-            <span className="font-bold tracking-widest text-lg">COMPETITIONS</span>
-            <span className="text-gray-600 text-sm">02</span>
-          </Link>
-          
-          <Link 
-            to="/techtalk" 
-            onClick={toggleMenu}
-            className="w-full flex items-center justify-between px-4 py-4 text-gray-400 active:bg-white/5 border-l-2 border-transparent active:border-gray-500 rounded-r-lg transition-all font-heading"
-          >
-            <span className="font-bold tracking-widest text-lg">TECHTALK</span>
-            <span className="text-gray-600 text-sm">03</span>
-          </Link>
+          {navItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              end={item.end}
+              onClick={toggleMenu}
+              className={getMobileLinkClass}
+            >
+              {({ isActive }) => (
+                <>
+                  <span
+                    className={`font-bold tracking-widest text-lg ${
+                      isActive
+                        ? 'text-[#00f0ff] drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]'
+                        : ''
+                    }`}
+                  >
+                    {item.label}
+                  </span>
+                  <span className={isActive ? 'text-[#00f0ff]/50 text-sm' : 'text-gray-600 text-sm'}>
+                    {item.number}
+                  </span>
+                </>
+              )}
+            </NavLink>
+          ))}
         
           <div className="pt-6">
             <a 

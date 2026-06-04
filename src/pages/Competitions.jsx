@@ -1,15 +1,152 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import './Competitions.css'
+
+const competitions = [
+  {
+    id: 'ui-ux-design',
+    category: 'ARCHITECTS OF THE FUTURE',
+    title: 'UI/UX DESIGN',
+    description:
+      "Design the interfaces that will power tomorrow's technologies. Participants will receive a prompt challenging them to solve a complex user experience problem using futuristic aesthetics.",
+    tags: ['Figma', 'Prototyping', 'Research'],
+    themeColor: 'var(--tf-pink)',
+  },
+  {
+    id: 'capture-the-flag',
+    category: 'TEMPORAL SECURITY BREACH',
+    title: 'CAPTURE THE FLAG',
+    description:
+      'Hackers wanted. Penetrate secure networks, solve cryptographic puzzles, and secure the flags before the timeline collapses. Suitable for both beginners and seasoned pros.',
+    tags: ['Cryptography', 'Web Exploitation', 'Forensics'],
+    themeColor: 'var(--tf-cyan)',
+  },
+  {
+    id: 'data-analytics',
+    category: 'PREDICTIVE ALGORITHMS',
+    title: 'DATA ANALYTICS',
+    description:
+      'Dive deep into massive datasets from alternate timelines. Extract meaningful insights, visualize complex patterns, and present data-driven solutions to real-world problems.',
+    tags: ['Python', 'Machine Learning', 'Visualization'],
+    themeColor: 'var(--tf-amber)',
+  },
+]
 
 const Competitions = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#121212] text-white">
+    <>
       <Navbar />
 
-      <main className="flex-1" />
+      <main className="competitions-page competitions-wrapper">
+        <img
+          src="/bg-top.svg"
+          className="bg-svg-top"
+          aria-hidden="true"
+          alt=""
+        />
+        <img
+          src="/bg-city.svg"
+          className="bg-svg-bottom"
+          aria-hidden="true"
+          alt=""
+        />
+
+        <div className="competitions-main">
+          <section
+            className="competitions-hero"
+            aria-labelledby="competitions-title"
+          >
+            <div className="competitions-hero__copy">
+              <h1
+                className="neon-stroke neon-stroke--competition"
+                id="competitions-title"
+              >
+                COMPETITIONS
+              </h1>
+              <p className="competitions-hero__description">
+                Choose your arena. Compete against the brightest minds across
+                multiple dimensions.
+              </p>
+            </div>
+
+            <div className="competitions-list">
+              {competitions.map((competition) => (
+                <article
+                  className="competition-card"
+                  key={competition.id}
+                  style={{ '--competition-color': competition.themeColor }}
+                >
+                  <div className="competition-card__icon" aria-hidden="true">
+                    <img
+                      className="competition-card__icon-img"
+                      src={`/${competition.id}.svg`}
+                      alt={`${competition.title} icon`}
+                    />
+                  </div>
+
+                  <div className="competition-card__content">
+                    <p className="competition-card__category">
+                      {competition.category}
+                    </p>
+                    <h2 className="competition-card__title">
+                      {competition.title}
+                    </h2>
+                    <p className="competition-card__description">
+                      {competition.description}
+                    </p>
+                    <ul
+                      className="competition-card__tags"
+                      aria-label={`${competition.title} tags`}
+                    >
+                      {competition.tags.map((tag) => (
+                        <li className="competition-card__tag" key={tag}>
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <aside
+                    className="competition-card__actions"
+                    aria-label={`${competition.title} actions`}
+                  >
+                    <p className="competition-card__prize-label">PRIZE POOL</p>
+                    <p className="competition-card__prize">Rp ....</p>
+                    <a href="/guidebook" className="competition-card__button">
+                      Guidebook
+                    </a>
+                    <a href="/register" className="competition-card__button">
+                      Register
+                    </a>
+                  </aside>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section
+            className="partners-section"
+            aria-label="Sponsors and media partners"
+          >
+            <div className="partners-section__content">
+              <div className="partners-section__group partners-section__group--sponsors">
+                <h2 className="neon-stroke neon-stroke--light">SPONSORS</h2>
+                <span className="section-accent section-accent--pink" />
+              </div>
+
+              <div className="partners-section__group partners-section__group--media">
+                <h2 className="neon-stroke neon-stroke--light">
+                  MEDIA PARTNER
+                </h2>
+                <span className="section-accent section-accent--amber" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
 
       <Footer />
-    </div>
+    </>
   )
 }
 
