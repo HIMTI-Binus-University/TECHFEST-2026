@@ -2,6 +2,24 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
+const navItems = [
+  { label: 'HOME', number: '01', to: '/', end: true },
+  { label: 'COMPETITIONS', number: '02', to: '/competitions' },
+  { label: 'TECHTALK', number: '03', to: '/techtalk' },
+];
+
+const getDesktopLinkClass = ({ isActive }) =>
+  isActive
+    ? 'active flex items-center text-[#00f0ff] font-bold tracking-widest text-sm drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]'
+    : 'text-gray-400 hover:text-white font-bold tracking-widest text-sm transition-colors duration-300';
+
+const getMobileLinkClass = ({ isActive }) =>
+  `w-full flex items-center justify-between px-4 py-4 border-l-2 rounded-r-lg transition-all font-heading ${
+    isActive
+      ? 'active bg-white/5 border-[#00f0ff]'
+      : 'text-gray-400 active:bg-white/5 border-transparent active:border-gray-500'
+  }`;
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();

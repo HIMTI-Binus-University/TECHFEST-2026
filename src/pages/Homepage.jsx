@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Timeline from '../components/Timeline'
 import About from '../components/About'
+import MainEvents from '../components/MainEvents'
 import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 
@@ -14,6 +15,7 @@ const Homepage = () => {
         <Hero />
         <Timeline />
         <About />
+        <MainEvents />
         <Carousel />
       </main>
 
