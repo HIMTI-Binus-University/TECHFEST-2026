@@ -122,3 +122,45 @@ code {
 .font-orbitron * {
   font-family: var(--font-title);
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.about-heading {
+  font-family: var(--font-title) !important;
+  font-size: clamp(1.5rem, 3vw, 2.2rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.1 !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 12px;
+  margin: 0 0 20px 0 !important;
+}
+
+.about-heading__about {
+  color: #ffffff !important;
+}
+
+.about-heading__techfest {
+  background: linear-gradient(90deg, #ff3a70 0%, #ffaa3b 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block;
+}
+
+
