@@ -9,9 +9,9 @@ const Hero = () => {
     <section className="relative bg-[#00113B] w-full h-screen flex overflow-hidden flex-col items-center justify-center">
       {/*background*/}
       <div className="absolute inset-0 z-10 pointer-events-none flex justify-center">
-          <img src={ground} className="absolute -top-12 md:-top-24 z-[15] w-full h-[150px] md:h-[200px] object-cover brightness-50"/>
-          <img src={citybg} className="absolute top-0 left-5 z-10 w-full md:w-[5000px] h-auto -scale-y-100 -scale-x-100 opacity-30 md:opacity-100 brightness-[0.4]"/>
-          <img src={city} className="absolute top-0 left-5 z-20 w-full md:w-[700px] h-auto -scale-y-100 -scale-x-100 opacity-30 md:opacity-100 brightness-[0.4]"/>
+          <img src={ground} className="absolute top-0 z-20 w-full h-[80px] md:h-[100px] object-cover object-bottom brightness-50"/>
+          <img src={citybg} className="absolute h-full -top-20 md:-top-50 left-5 z-10 md:w-full md:h-auto -scale-y-100 -scale-x-100 opacity-30 md:opacity-100 brightness-[0.4]"/>
+          <img src={city} className="absolute top-0 left-5 z-30 w-2/3 md:w-[1000px] h-auto -scale-y-100 -scale-x-100 md:opacity-100 brightness-[0.4]"/>
       </div>
       {/*Techfest text*/}
       <div className="relative z-30 flex flex-col items-center space-y-4 md:space-y-6 mt-16 md:mt-32 text-center">
