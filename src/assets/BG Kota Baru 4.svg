@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1534 1156.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #001854;
+      }
+
+      .cls-3 {
+        fill: #02216e;
+      }
+
+      .cls-4 {
+        opacity: .7;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="766.5" y1="841.6" x2="766.5" y2="107.7" gradientTransform="translate(0 504)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#838383"/>
+      <stop offset="1" stop-color="#838383" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="766.5" y1="336" x2="766.5" y2="654.3" gradientTransform="translate(0 504)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffb205" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#ffb205" stop-opacity=".2"/>
+      <stop offset=".7" stop-color="#ffb205" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#ffb205" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="Layer_1-2" data-name="Layer_1">
+        <path class="cls-2" d="M786.8,146.2h-188.6v879.7h188.6V146.2Z"/>
+        <path class="cls-2" d="M1534.2,1030.2v-484.5h-91.3v-268h-120.6v752.6h211.9Z"/>
+        <path class="cls-2" d="M170.9,391.9H-2.1v632.3h173V391.9Z"/>
+        <path class="cls-2" d="M1100.8,1031.9v-414.6h-94.3v-225.5h-131.5v640.1h225.8Z"/>
+        <path class="cls-2" d="M426.1,430.9h-177.3v596h177.3V430.9Z"/>
+        <path class="cls-2" d="M-2.1,967.2v191.2h1536.3v-191.2H-2.1Z"/>
+        <g>
+          <path class="cls-3" d="M209.9,592.5H72.3v424.7h137.5v-424.7h.1Z"/>
+          <path class="cls-3" d="M367.5,486h-94v491.1h94v-491.1h0Z"/>
+          <path class="cls-3" d="M598.6,529.7h-94v451.7h94v-451.7Z"/>
+          <path class="cls-3" d="M685.7,631.5h-94v352.6h94v-352.6h0Z"/>
+          <path class="cls-3" d="M438.6,364.5h-93.6v612.2h93.6V364.5Z"/>
+          <path class="cls-3" d="M821.5,364.5h-67.4v612.7h67.4V364.5Z"/>
+          <path class="cls-3" d="M888.9,234.9l-67.4,47.3v687.4h67.4V234.9Z"/>
+          <path class="cls-3" d="M996.6,593h-55v390.3h55v-390.3Z"/>
+          <path class="cls-3" d="M1153.5,486h-93.5v517.7h93.5V486Z"/>
+          <path class="cls-3" d="M1384.5,529.7h-93.5v469.1h93.5v-469.1Z"/>
+          <path class="cls-3" d="M1225,364.5h-94v637.4h94V364.5Z"/>
+          <path class="cls-3" d="M1534.2,967.2H-2.1v191.2h1536.3v-191.2h0Z"/>
+        </g>
+        <g class="cls-4">
+          <path class="cls-5" d="M1534.5,484.5H-1.4v673.8h1535.9V484.5Z"/>
+        </g>
+        <rect class="cls-1" x="-1.4" y="840" width="1535.9" height="318.3"/>
+      </g>
+    </g>
+  </g>
+</svg>
