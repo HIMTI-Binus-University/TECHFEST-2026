@@ -55,10 +55,10 @@ const Navbar = () => {
     <>
       <nav className="bg-[#0c0e0b] sticky top-0 z-40 w-full font-heading border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-20 lg:h-24">
             
             {/* Logo Section */}
-            <div className="flex-shrink-0 flex items-center cursor-pointer overflow-hidden h-20 w-[240px] md:w-[320px]">
+            <div className="flex-shrink-0 flex items-center cursor-pointer overflow-hidden h-20 w-[240px] md:w-[260px] lg:w-[320px]">
               <Link to="/">
                 <img
                   src={logo}
@@ -69,7 +69,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               <Link 
                 to="/" 
                 className={desktopLinkClass('/')}
@@ -97,7 +97,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Hamburger Button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button 
                 onClick={toggleMenu} 
                 aria-expanded={isOpen}
@@ -113,13 +113,13 @@ const Navbar = () => {
       </nav>
 
       <div 
-        className={`md:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
           isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
         }`}
         onClick={toggleMenu}
       ></div>
       <div 
-        className={`md:hidden fixed bottom-0 left-0 right-0 z-[60] bg-[#0c0e0b] border-t border-white/10 rounded-t-3xl shadow-[0_-20px_40px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+        className={`lg:hidden fixed bottom-0 left-0 right-0 z-[60] bg-[#0c0e0b] border-t border-white/10 rounded-t-3xl shadow-[0_-20px_40px_rgba(0,0,0,0.5)] transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] ${
           isOpen ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
