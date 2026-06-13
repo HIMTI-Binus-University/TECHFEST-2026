@@ -2,7 +2,7 @@ import mascot from '../assets/mascot.png';
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#00113c] text-white py-16 md:py-24 overflow-hidden relative border-t border-white/5">
+    <section id="about" className="bg-[#00113c] text-white py-16 md:py-24 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           
@@ -18,7 +18,7 @@ const About = () => {
             </h2>
             
             <p className="text-gray-300 font-body text-sm sm:text-base leading-relaxed tracking-wider text-justify md:text-left">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Techfest (Technology Festival) adalah rangkaian acara bagi mahasiswa di seluruh Indonesia untuk menyalurkan minat dan bakat di bidang IT. Melalui kompetisi dan sesi bincang teknologi, Techfest mendorong inovasi dan kemampuan problem-solving. Tahun ini, kami mengusung tema &ldquo;(CITE) Competition of Innovation Across Time Eras&rdquo;, menghadirkan dua kegiatan utama: TechTalk dan Kompetisi.
             </p>
           </div>
 

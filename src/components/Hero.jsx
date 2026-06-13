@@ -19,8 +19,8 @@ const Hero = () => {
           TECHFEST
         </div>
         {/*placeholder subtext*/}
-        <p className="text-[16px] md:text-[20px] font-black text-[#05BADD]">
-          LOREM IPSUM AGAINNN
+        <p className="text-[16px] md:text-[20px] font-medium text-[#05BADD] max-w-2xl text-center">
+          Ajang inovasi dan talenta di bidang IT bagi mahasiswa seluruh Indonesia dengan tema &ldquo;(CITE) Competition of Innovation Across Time Eras&rdquo;
         </p>
         {/*button + link*/}
         <Link 
@@ -29,6 +29,7 @@ const Hero = () => {
         REGISTER NOW
         </Link>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#00113B] to-transparent z-40" />
     </section>
   ) 
 }
