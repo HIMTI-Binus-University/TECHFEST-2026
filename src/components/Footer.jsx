@@ -19,7 +19,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="text-gray-400 mt-4 max-w-sm text-sm leading-relaxed font-body">
-              Lorep ipsum some stuff put this text later.
+              Techfest (Technology Festival) adalah rangkaian acara bagi mahasiswa di seluruh Indonesia untuk menyalurkan minat dan bakat di bidang IT, mengasah kreativitas, dan memperkuat kemampuan problem-solving melalui TechTalk dan Kompetisi.
             </p>
           </div>
 
