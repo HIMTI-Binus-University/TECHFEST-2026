@@ -11,6 +11,9 @@ const competitions = [
       "Design the interfaces that will power tomorrow's technologies. Participants will receive a prompt challenging them to solve a complex user experience problem using futuristic aesthetics.",
     tags: ['Figma', 'Prototyping', 'Research'],
     themeColor: 'var(--tf-pink)',
+    prizePool: 'Rp 2.250.000',
+    guidebookUrl:
+      'https://docs.google.com/document/d/1tCxhJ5SPuiv5-VfpQhwpF1fffjASoJ-WF_tcdtRTn50/edit?tab=t.0',
   },
   {
     id: 'capture-the-flag',
@@ -20,6 +23,9 @@ const competitions = [
       'Hackers wanted. Penetrate secure networks, solve cryptographic puzzles, and secure the flags before the timeline collapses. Suitable for both beginners and seasoned pros.',
     tags: ['Cryptography', 'Web Exploitation', 'Forensics'],
     themeColor: 'var(--tf-cyan)',
+    prizePool: 'Rp 3.250.000',
+    guidebookUrl:
+      'https://docs.google.com/document/d/15eDv52OVlbeo3lG0tUdATi_sU9YI3KX5rtOGrY4YBro/edit?tab=t.0',
   },
   {
     id: 'data-analytics',
@@ -29,6 +35,9 @@ const competitions = [
       'Dive deep into massive datasets from alternate timelines. Extract meaningful insights, visualize complex patterns, and present data-driven solutions to real-world problems.',
     tags: ['Python', 'Machine Learning', 'Visualization'],
     themeColor: 'var(--tf-amber)',
+    prizePool: 'Rp 3.250.000',
+    guidebookUrl:
+      'https://docs.google.com/document/d/1rAqctGo3e1f6WDCYyZ37q6nlRNydQDjfS1aUjDyUE_g/edit?tab=t.0',
   },
 ]
 
@@ -111,11 +120,16 @@ const Competitions = () => {
                     aria-label={`${competition.title} actions`}
                   >
                     <p className="competition-card__prize-label">PRIZE POOL</p>
-                    <p className="competition-card__prize">Rp ....</p>
-                    <a href="/guidebook" className="competition-card__button">
+                    <p className="competition-card__prize">{competition.prizePool}</p>
+                    <a
+                      href={competition.guidebookUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="competition-card__button"
+                    >
                       Guidebook
                     </a>
-                    <a href="/register" className="competition-card__button">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfovXbW9HcBnXhqgSE_lcQiw4ZKI9WlQr_ccDPnc1F-tmqp0g/viewform?usp=publish-editor" className="competition-card__button">
                       Register
                     </a>
                   </aside>

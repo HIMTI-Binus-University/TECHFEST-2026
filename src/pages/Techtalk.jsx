@@ -25,7 +25,7 @@ const Techtalk = () => {
           <div className="relative z-10 mx-auto grid min-h-[calc(100svh-12rem)] w-full max-w-6xl items-center gap-12 pt-3 pb-36 md:py-0 lg:grid-cols-[0.9fr_1fr]">
             <div className="mx-auto flex w-full max-w-[440px] flex-col items-center text-center lg:mx-0 lg:items-start lg:pl-2 lg:text-left">
               <div className="font-orbitron mb-4 inline-flex rounded-full border border-[#00C7C04D]/30 bg-[#00C7C01A]/10 px-8 py-2 text-[10px] font-bold text-[#00C7C0] md:px-10 md:text-[14px]">
-                hari apa tanggal berapa
+                Sabtu, 25 Juli 2026
               </div>
 
               <div className="font-orbitron m-0 mb-10 text-[64px] font-bold uppercase leading-[0.78] tracking-[0.03em] text-white sm:text-[76px] md:text-[92px]">
@@ -36,7 +36,7 @@ const Techtalk = () => {
               </div>
 
               <p className="mt-2 max-w-[330px] text-xs leading-6 text-white/70 md:mt-12 md:max-w-[420px] md:text-sm md:leading-7">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                Seminar teknologi yang menghadirkan pembicara ahli untuk memperluas wawasan peserta tentang perkembangan terbaru di bidang Teknologi Informasi dan Komunikasi (TIK).
               </p>
 
               <div className="mt-7 grid w-full max-w-[300px] gap-4 text-left md:max-w-none">
@@ -45,8 +45,8 @@ const Techtalk = () => {
                     <CalendarIcon className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-sm text-white">tanggal berapa</p>
-                    <p className="mt-1 text-xs text-white/50">waktunya berapa</p>
+                    <p className="text-sm text-white">25 Juli 2026</p>
+                    <p className="mt-1 text-xs text-white/50">TBA</p>
                   </div>
                 </div>
 
@@ -55,8 +55,8 @@ const Techtalk = () => {
                     <LocationIcon className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-sm text-white">dimana lokasinya</p>
-                    <p className="mt-1 text-xs text-white/50">onsite kah zoom kah</p>
+                    <p className="text-sm text-white">Binus @Kemanggisan - Anggrek Ruang 800</p>
+                    <p className="mt-1 text-xs text-white/50">ONSITE</p>
                   </div>
                 </div>
               </div>
@@ -86,12 +86,12 @@ const Techtalk = () => {
                   <span className="mb-4 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white">
                     Our Speaker
                   </span>
-                  <h2 className="mt-4 text-[20px] leading-tight text-white">Nama Speaker disini</h2>
+                  <h2 className="mt-4 text-[20px] leading-tight text-white">TBA</h2>
                   <div className="absolute -bottom-4 -left-4 h-16 w-16 border-l-2 border-b-2 border-[#00C7C0]" />
                   <p className="max-w-[300px] text-[11px] font-bold leading-5 text-[#05d4df]">
-                    "Topiknya disini
+                    "Beyond the Campus Lab: 
                     <br />
-                    bisa buat 2 lines, nanti adjust"
+                    Bridging Academic Code to Industry Reality"
                   </p>
                 </div>
               </article>

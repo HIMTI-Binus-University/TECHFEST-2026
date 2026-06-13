@@ -12,9 +12,9 @@ const Homepage = () => {
 
       <main className="flex-1">
         <Hero />
-        <Timeline />
         <About />
         <MainEvents />
+        <Timeline />
       </main>
 
       <Footer />
