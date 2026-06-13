@@ -29,7 +29,7 @@ const Hero = () => {
         REGISTER NOW
         </Link>
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#00113B] to-transparent z-40" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#00113B] to-transparent z-20" />
     </section>
   ) 
 }
