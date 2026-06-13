@@ -34,6 +34,13 @@
   }
 }
 
+@font-face {
+  font-family: "BTTF";
+  src: url('./assets/fonts/BTTF.ttf');
+  fontweight: normal;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
