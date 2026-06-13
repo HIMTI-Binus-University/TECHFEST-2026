@@ -5,7 +5,6 @@
   overflow: hidden;
   isolation: isolate;
   
-  /* Hapus kode linear-gradient(...) sebelumnya dan ganti dengan warna solid ini */
   background: #052063; 
 }
 
@@ -15,8 +14,6 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  /* Sangat Penting: Jangan ada z-index, opacity, atau overflow di sini 
-     agar gambar di dalamnya bisa menyela maju ke depan kartu */
 }
 
 .timeline-background img {
@@ -29,20 +26,17 @@
   bottom: -2%;
   left: 0;
   width: 100%;
-  /* Tingginya di-set 25vh, otomatis akan menutupi bagian bawah skyline */
   height: 25vh; 
   object-fit: cover;
   object-position: top;
   position: absolute;
-  z-index: 1; /* Layer 1: Di depan skyline, tapi di belakang timeline */
+  z-index: 1;
 }
 
 .timeline-background__car {
   top: 8%; 
-  left: -2%; /* Tetap di sini agar sisi kiri yang terpotong lurus tetap tersembunyi */
+  left: -2%;
   
-  /* Ukurannya dikecilkan: dari 65vw turun menjadi 50vw, 
-     dan batas maksimalnya diturunkan dari 1100px menjadi 800px */
   width: clamp(400px, 50vw, 800px); 
   height: auto;
   
@@ -51,12 +45,11 @@
 }
 
 .timeline-background__skyline {
-  bottom: 15vh; /* Tetap di sini agar bagian bawahnya tersembunyi di balik tanah */
+  bottom: 15vh;
   left: 0;
   width: 100%;
-  height: auto; /* KUNCI UTAMA: Biarkan tingginya menyesuaikan secara natural! */
+  height: auto;
   
-  /* HAPUS baris object-fit dan object-position yang ada sebelumnya */
   
   position: absolute;
   z-index: 0;
@@ -68,8 +61,6 @@
   width: clamp(600px, 55vw, 1100px);
   height: auto;
   position: absolute;
-  /* KUNCI UTAMANYA: Dikembalikan ke Layer 1 agar garis dan dot timeline 
-     kembali muncul di atas kota futuristik ini */
   z-index: 1; 
 }
 
@@ -113,7 +104,7 @@
 
 .timeline-list {
   position: relative;
-  padding-bottom: 5rem; /* Tambahkan ini agar garis tengah lebih panjang ke bawah */
+  padding-bottom: 5rem;
 }
 
 .timeline-list::before {

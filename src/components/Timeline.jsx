@@ -1,4 +1,3 @@
-// Ganti nama file dan ekstensinya menjadi .svg sesuai yang ada di foldermu
 import car2 from '../assets/Car with Path.svg'
 import KotaBaru from '../assets/BG Kota Baru 4.svg'
 import NewCityGround from '../assets/New City Ground.svg'
