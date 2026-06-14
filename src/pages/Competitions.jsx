@@ -138,6 +138,7 @@ const Competitions = () => {
                   </div>
                </section>
 
+               {/*
                <section
                   className="partners-section"
                   aria-label="Sponsors and media partners"
@@ -156,6 +157,7 @@ const Competitions = () => {
                      </div>
                   </div>
                </section>
+               */}
             </div>
          </main>
 
