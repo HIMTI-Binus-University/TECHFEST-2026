@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1534 434.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a997;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        mask: url(#mask);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #00fc93;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+    <mask id="mask" x="0" y="-479.2" width="1534" height="914" maskUnits="userSpaceOnUse">
+      <g id="mask0_466_2334">
+        <path class="cls-2" d="M1534-479.2H0V434.8h1534V-479.2Z"/>
+      </g>
+    </mask>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g class="cls-3">
+        <path class="cls-1" d="M1534,0H0v434.8h1534V0Z"/>
+      </g>
+      <path class="cls-4" d="M1054.5,209.3l-4.6-8.4"/>
+      <path class="cls-4" d="M1060.6,203.8v-11.7"/>
+      <path class="cls-4" d="M1067.2,207.3l4.8-9.4"/>
+      <path class="cls-4" d="M910.2,157.5l5.8,11.7"/>
+      <path class="cls-4" d="M923.1,164.6v-14.9"/>
+      <path class="cls-4" d="M933.8,169.2l4.3-10.1"/>
+      <path class="cls-4" d="M1279.1,86.2l4.6,8.6"/>
+      <path class="cls-4" d="M1295.4,89v-12.7"/>
+      <path class="cls-4" d="M1305.8,92.5l7.5-9.4"/>
+      <path class="cls-4" d="M1311.5,100.8l8.7-4.5"/>
+      <path class="cls-4" d="M1178.6,149.7l4.5,7.9"/>
+      <path class="cls-4" d="M1192.4,153.7l5.5-7.1"/>
+      <path class="cls-4" d="M1327.3,21.1l7,11.6"/>
+      <path class="cls-4" d="M1343.1,26.9v-14"/>
+      <path class="cls-4" d="M1352.5,26.9l4.6-7"/>
+      <path class="cls-4" d="M1321.2,32.7l-8.5-4.4"/>
+      <path class="cls-4" d="M940.6,332.5l6.8,11"/>
+      <path class="cls-4" d="M955.3,332.5v-9.6"/>
+      <path class="cls-4" d="M966.2,338l7.1-7.6"/>
+      <path class="cls-4" d="M976.9,348.1l11.2-5.8"/>
+      <path class="cls-4" d="M1145.2,287.9l-9.8-9.6"/>
+      <path class="cls-4" d="M1152.7,280.4v-11.8"/>
+      <path class="cls-4" d="M1165.9,280.4l7.1-5.9"/>
+      <path class="cls-4" d="M1169.5,290l8.3-4.3"/>
+      <path class="cls-4" d="M514.1,297l-6.6-9.1"/>
+      <path class="cls-4" d="M523.8,291.7l-2.5-13.4"/>
+      <path class="cls-4" d="M534,297l5.6-14.3"/>
+      <path class="cls-4" d="M625.8,359.5l-5.1-11"/>
+      <path class="cls-4" d="M632.4,354v-12.3"/>
+      <path class="cls-4" d="M639,359.5l6.5-7.7"/>
+      <path class="cls-4" d="M680.6,284.4l-2-6.1"/>
+      <path class="cls-4" d="M690.8,281.3l3.1-8.2"/>
+      <path class="cls-4" d="M657.9,208.8l-5.1-9.1"/>
+      <path class="cls-4" d="M663.7,203l1.3-9.6"/>
+      <path class="cls-4" d="M672.9,206.5l1.7-7.9"/>
+      <path class="cls-4" d="M392.9,120.2l2,11.8"/>
+      <path class="cls-4" d="M406.1,126.1l5.9-11.4"/>
+      <path class="cls-4" d="M410.2,135.1l6.9-3.6"/>
+      <path class="cls-4" d="M191,35.2l2.4,7"/>
+      <path class="cls-4" d="M201.3,38.7l3.3-10.2"/>
+      <path class="cls-4" d="M204.6,45.8l7.5-7.2"/>
+      <path class="cls-4" d="M329.5,87.5l7.8,6.6"/>
+      <path class="cls-4" d="M344.4,90.8v-12.4"/>
+      <path class="cls-4" d="M356.2,87.5l5.6-2.9"/>
+    </g>
+  </g>
+</svg>
