@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { CalendarIcon, LocationIcon, RightArrowIcon } from '../components/icon'
 import { CityBackdrop, CitySkyline, LightGradient, MobileCityBackdrop, MobileCityLayer, MobileCitySkyline } from '../components/graphics'
-import speakerImage from '../assets/image.png'
+import speakerImage from '../assets/FotoPembicara.png'
 
 const Techtalk = () => {
   return (
@@ -62,7 +62,7 @@ const Techtalk = () => {
               </div>
 
               <a
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScbQQtXallDB580tCHRmaC_PF5owmGTdS_xgimhv2cvjntEsA/viewform"
                 className="font-orbitron relative mt-8 inline-flex min-h-12 w-full max-w-[280px] items-center justify-center gap-3 overflow-hidden rounded bg-[linear-gradient(100deg,#10BFC4_0%,#12BFCC_48%,#27C5D7_78%,#62D4DF_100%)] px-5 text-base font-bold text-[#03122a] shadow-[0_0_24px_rgba(5,186,221,0.24)] transition duration-300 hover:translate-y-[-2px] hover:shadow-[0_0_34px_rgba(5,186,221,0.4)] md:max-w-[320px] md:px-7 md:text-lg"
               >
                 <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,17,60,0.16)_0%,rgba(0,17,60,0)_48%)]" />
@@ -72,28 +72,30 @@ const Techtalk = () => {
               </a>
             </div>
 
-            <div className="mx-auto hidden w-full max-w-[430px] md:block lg:mr-8">
-              <article className="relative min-h-[560px] overflow-hidden rounded-b-2xl border border-[#2B4871] bg-[#020817] shadow-[0_28px_70px_rgba(0,0,0,0.42)]">
+            <div className="mx-auto mt-10 w-full max-w-[430px] md:mt-0 lg:mr-8">
+              <article className="relative min-h-[420px] overflow-hidden rounded-b-2xl border border-[#2B4871] bg-[#020817] shadow-[0_28px_70px_rgba(0,0,0,0.42)] md:min-h-[560px]">
                 <img
                   src={speakerImage}
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.1)_100%)]" />
-                <div className="absolute right-5 top-5 h-28 w-16 border-r-2 border-t-2 border-[#00C7C0]" />
+                <div className="absolute right-4 top-4 h-20 w-12 border-r-2 border-t-2 border-[#00C7C0] md:right-5 md:top-5 md:h-28 md:w-16" />
 
-                <div className="absolute bottom-10 left-7 right-7">
-                  <span className="mb-4 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white">
-                    Our Speaker
-                  </span>
-                  <h2 className="mt-4 text-[20px] leading-tight text-white">Yoel Gogo Panjaitan</h2>
-                  <p className="mt-1 text-[11px] text-white/80">Senior Technology Analyst at Deloitte</p>
-                  <div className="absolute -bottom-4 -left-4 h-16 w-16 border-l-2 border-b-2 border-[#00C7C0]" />
-                  <p className="max-w-[300px] text-[11px] font-bold leading-5 text-[#05d4df]">
-                    "Beyond the Campus Lab: 
-                    <br />
-                    Bridging Academic Code to Industry Reality"
-                  </p>
+                <div className="absolute bottom-6 left-4 right-4 md:bottom-10 md:left-7 md:right-7">
+                  <div className="relative max-w-[340px] rounded-2xl border border-white/10 bg-[#020817]/45 px-3 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.24)] backdrop-blur-md md:px-4 md:py-4">
+                    <span className="mb-3 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white md:mb-4">
+                      Our Speaker
+                    </span>
+                    <h2 className="mt-3 text-[18px] leading-tight text-white md:mt-4 md:text-[20px]">Yoel Gogo Panjaitan</h2>
+                    <p className="mt-1 text-[10px] text-white/80 md:text-[11px]">Senior Technology Analyst at Deloitte</p>
+                    <p className="mt-2 max-w-[300px] text-[10px] font-bold leading-4 text-[#05d4df] md:mt-3 md:text-[11px] md:leading-5">
+                      "Beyond the Campus Lab: 
+                      <br />
+                      Bridging Academic Code to Industry Reality"
+                    </p>
+                    <div className="absolute -bottom-3 -left-3 h-12 w-12 border-l-2 border-b-2 border-[#00C7C0] md:-bottom-4 md:-left-4 md:h-16 md:w-16" />
+                  </div>
                 </div>
               </article>
             </div>
