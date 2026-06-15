@@ -46,7 +46,7 @@ const Techtalk = () => {
                   </span>
                   <div>
                     <p className="text-sm text-white">25 Juli 2026</p>
-                    <p className="mt-1 text-xs text-white/50">TBA</p>
+                    <p className="mt-1 text-xs text-white/50">13:40 - 16:05 WIB</p>
                   </div>
                 </div>
 
@@ -62,7 +62,7 @@ const Techtalk = () => {
               </div>
 
               <a
-                href="/register"
+                href="#"
                 className="font-orbitron relative mt-8 inline-flex min-h-12 w-full max-w-[280px] items-center justify-center gap-3 overflow-hidden rounded bg-[linear-gradient(100deg,#10BFC4_0%,#12BFCC_48%,#27C5D7_78%,#62D4DF_100%)] px-5 text-base font-bold text-[#03122a] shadow-[0_0_24px_rgba(5,186,221,0.24)] transition duration-300 hover:translate-y-[-2px] hover:shadow-[0_0_34px_rgba(5,186,221,0.4)] md:max-w-[320px] md:px-7 md:text-lg"
               >
                 <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,17,60,0.16)_0%,rgba(0,17,60,0)_48%)]" />
@@ -86,7 +86,8 @@ const Techtalk = () => {
                   <span className="mb-4 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white">
                     Our Speaker
                   </span>
-                  <h2 className="mt-4 text-[20px] leading-tight text-white">TBA</h2>
+                  <h2 className="mt-4 text-[20px] leading-tight text-white">Yoel Gogo Panjaitan</h2>
+                  <p className="mt-1 text-[11px] text-white/80">Senior Technology Analyst at Deloitte</p>
                   <div className="absolute -bottom-4 -left-4 h-16 w-16 border-l-2 border-b-2 border-[#00C7C0]" />
                   <p className="max-w-[300px] text-[11px] font-bold leading-5 text-[#05d4df]">
                     "Beyond the Campus Lab: 

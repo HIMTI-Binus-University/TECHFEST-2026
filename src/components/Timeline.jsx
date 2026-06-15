@@ -6,39 +6,73 @@ import SpaceCity from '../assets/Kota Baru.svg'
 import './Timeline.css'
 const timelineEvents = [
   {
-    dateTag: 'DATE TO BE ANNOUNCED',
-    title: 'Registration Opens',
+    dateTag: '15 - 22 JUNI 2026',
+    title: 'Early Bird Registration',
     description:
-      'Secure your place and prepare to enter the next generation of technology.',
+      'Pendaftaran gelombang pertama dibuka! Segera daftarkan tim kamu untuk mendapatkan harga spesial.',
     themeColor: '#FF5481',
   },
   {
-    dateTag: 'DATE TO BE ANNOUNCED',
-    title: 'Technical Meeting',
+    dateTag: '23 - 30 JUNI 2026',
+    title: 'Regular Registration',
     description:
-      'Meet the organizers, review the event flow, and get every question answered.',
+      'Pendaftaran gelombang reguler. Pastikan tempatmu aman untuk berkompetisi di Techfest tahun ini.',
     themeColor: '#FF8007',
   },
   {
-    dateTag: 'DATE TO BE ANNOUNCED',
-    title: 'Competition Day',
-    description:
-      'Bring your strongest ideas to life and compete alongside ambitious innovators.',
-    themeColor: '#FFAF08',
-  },
-  {
-    dateTag: 'DATE TO BE ANNOUNCED',
-    title: 'Tech Talk',
-    description:
-      'Explore new perspectives and practical insights from leaders in technology.',
+    dateTag: '6 JULI 2026',
+    title: 'Webinar Techtalk',
+    description: 'Sesi webinar online pra-event yang terbuka untuk umum sebagai pengantar sebelum acara puncak.',
     themeColor: '#00C7C0',
   },
   {
-    dateTag: 'DATE TO BE ANNOUNCED',
-    title: 'Awarding Ceremony',
+    dateTag: '8 JULI 2026',
+    title: 'Technical Meeting',
     description:
-      "Celebrate the teams, ideas, and achievements that shaped this year's Techfest.",
+      'Briefing wajib bagi seluruh peserta. Kita akan membahas aturan lomba, teknis, dan sesi tanya jawab.',
+    themeColor: '#FFAF08',
+  },
+  {
+    dateTag: '9 - 13 JULI 2026',
+    title: 'Pengerjaan Lomba (Online)',
+    description:
+      'Masa pengerjaan project atau tantangan lomba secara online oleh masing-masing tim.',
+    themeColor: '#00C7C0',
+  },
+  {
+    dateTag: '14 - 18 JULI 2026',
+    title: 'Penilaian Juri',
+    description:
+      'Fase evaluasi mendalam. Hasil karya peserta akan direview dan dinilai oleh dewan juri profesional.',
     themeColor: '#05BADD',
+  },
+  {
+    dateTag: '19 JULI 2026',
+    title: 'Pengumuman Finalis',
+    description:
+      'Pengumuman tim-tim terbaik yang berhasil lolos tahap penjurian dan berhak maju ke babak final.',
+    themeColor: '#FF5481',
+  },
+  {
+    dateTag: '19 - 23 JULI 2026',
+    title: 'Pengerjaan PPT (Online)',
+    description:
+      'Waktu bagi para finalis untuk merancang materi dan slide presentasi yang memukau.',
+    themeColor: '#FF8007',
+  },
+  {
+    dateTag: '23 JULI 2026',
+    title: 'Pengumpulan PPT Final',
+    description:
+      'Batas akhir (deadline) penyerahan file presentasi untuk digunakan pada babak final.',
+    themeColor: '#FFAF08',
+  },
+  {
+    dateTag: '25 JULI 2026',
+    title: 'Final & Awarding (Onsite)',
+    description:
+      'Puncak acara Techfest! Presentasi langsung di hadapan juri, perayaan, dan pengumuman pemenang utama.',
+    themeColor: '#00C7C0',
   },
 ]
 
