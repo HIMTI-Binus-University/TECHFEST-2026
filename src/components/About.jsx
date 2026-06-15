@@ -18,7 +18,7 @@ const About = () => {
             </h2>
             
             <p className="text-gray-300 font-body text-sm sm:text-base leading-relaxed tracking-wider text-justify md:text-left">
-              Techfest (Technology Festival) adalah rangkaian acara bagi mahasiswa di seluruh Indonesia untuk menyalurkan minat dan bakat di bidang IT. Melalui kompetisi dan sesi bincang teknologi, Techfest mendorong inovasi dan kemampuan problem-solving. Tahun ini, kami mengusung tema &ldquo;(CITE) Competition of Innovation Across Time Eras&rdquo;, menghadirkan dua kegiatan utama: TechTalk dan Kompetisi.
+              Techfest (Technology Festival) adalah rangkaian acara bagi mahasiswa di seluruh Indonesia untuk menyalurkan minat dan bakat di bidang IT. Melalui kompetisi dan sesi bincang teknologi, Techfest mendorong inovasi dan kemampuan problem-solving. Tahun ini, kami mengusung tema (CITE) Competition of Innovation Across Time Eras, menghadirkan dua kegiatan utama: TechTalk dan Kompetisi.
             </p>
           </div>
 
