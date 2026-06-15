@@ -89,7 +89,7 @@ const Navbar = () => {
                 TECHTALK
               </Link>
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfovXbW9HcBnXhqgSE_lcQiw4ZKI9WlQr_ccDPnc1F-tmqp0g/viewform" 
+                href="https://bit.ly/EarlyBirdRegistrationTechfest2026" 
                 className="ml-4 text-[#ff0055] border-2 border-[#ff0055] rounded-full px-6 py-2 font-bold tracking-widest text-sm hover:bg-[#ff0055] hover:text-white hover:shadow-[0_0_15px_rgba(255,0,85,0.5)] transition-all duration-300"
               >
                 REGISTER
