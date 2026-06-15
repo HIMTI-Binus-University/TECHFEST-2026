@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  opacity: 0.8; 
 }
 
 .timeline-background img {
@@ -104,7 +105,7 @@
 
 .timeline-list {
   position: relative;
-  padding-bottom: 5rem;
+  padding-bottom: 0; 
 }
 
 .timeline-list::before {
@@ -200,9 +201,6 @@
     padding: 4.5rem 1rem 6rem;
   }
 
-  .timeline-background {
-    opacity: 0.48;
-  }
 
   .timeline-header {
     margin-bottom: 3.5rem;
