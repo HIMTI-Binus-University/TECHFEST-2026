@@ -1,5 +1,8 @@
 import { useRef } from 'react'
 import './MainEvents.css'
+import ctfImage from '../assets/ctf.jpg'
+import dataAnalyticsImage from '../assets/dataanalytics.jpg'
+import uiuxImage from '../assets/uiux.jpg'
 
 const mainEvents = [
   {
@@ -7,18 +10,21 @@ const mainEvents = [
     title: 'CAPTURE\nTHE FLAG',
     bgColor: '#FF548166', 
     textColor: '#FF5481',
+    image: ctfImage,
   },
   {
     tag: 'DATA SCIENCE',
     title: 'DATA\nANALYTICS',
     bgColor: '#00C7C066',
     textColor: '#00C7C0',
+    image: dataAnalyticsImage,
   },
   {
     tag: 'DESIGN',
     title: 'UI/UX\nDESIGN',
     bgColor: '#FFAF0866',
     textColor: '#FFAF08',
+    image: uiuxImage,
   },
 ]
 
@@ -75,7 +81,7 @@ const MainEvents = () => {
             <article
               className="main-events__card"
               key={event.tag}
-              style={{ '--event-color': event.bgColor }}
+              style={{ '--event-color': event.bgColor, '--event-image': `url(${event.image})` }}
             >
               <div className="main-events__card-content">
                 <p className="main-events__tag" style={{ color: event.textColor }}>{event.tag}</p>

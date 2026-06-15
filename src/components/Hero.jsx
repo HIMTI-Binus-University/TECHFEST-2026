@@ -28,9 +28,9 @@ const Hero = () => {
         </p>
         {/*button + link*/}
         <Link 
-        to="https://docs.google.com/forms/d/e/1FAIpQLSfovXbW9HcBnXhqgSE_lcQiw4ZKI9WlQr_ccDPnc1F-tmqp0g/viewform"
+        to="https://bit.ly/EarlyBirdRegistrationTechfest2026"
         className="mt-10 md:mt-14 bg-gradient-to-r from-[#FF5481] to-[#FFAF08] text-white tracking-widest py-3 px-8 md:px-16 rounded shadow-[0_0_20px_rgba(255,84,129,0.4)] hover:shadow-[0_0_30px_rgba(255,84,129,0.6)] transition-all duration-300 inline-block"
-        style={{ fontFamily: 'var(--font-title)' }}>
+        style={{ fontFamily: 'var(--font-title)' }}> 
         REGISTER NOW
         </Link>
       </div>

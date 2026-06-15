@@ -5,7 +5,7 @@
   overflow: hidden;
   isolation: isolate;
   
-  background: #00113c; 
+  background: #021b56; 
 }
 
 .timeline-background {
@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
+  opacity: 0.7; 
 }
 
 .timeline-background img {
@@ -104,7 +105,7 @@
 
 .timeline-list {
   position: relative;
-  padding-bottom: 5rem;
+  padding-bottom: 0; 
 }
 
 .timeline-list::before {
@@ -198,10 +199,6 @@
 @media (max-width: 700px) {
   .timeline-section {
     padding: 4.5rem 1rem 6rem;
-  }
-
-  .timeline-background {
-    opacity: 0.48;
   }
 
   .timeline-header {

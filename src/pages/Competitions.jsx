@@ -13,7 +13,7 @@ const competitions = [
       themeColor: 'var(--tf-pink)',
       prizePool: 'Rp 2.250.000',
       guidebookUrl:
-         '',
+         'https://drive.google.com/file/d/1Gz3Nju8oNwhO7N3PZIENA6NNh_jpflMl/view?usp=sharing',
    },
    {
       id: 'capture-the-flag',
@@ -25,7 +25,7 @@ const competitions = [
       themeColor: 'var(--tf-cyan)',
       prizePool: 'Rp 3.250.000',
       guidebookUrl:
-         '',
+         'https://drive.google.com/file/d/1fafIVzs07zO3d5EyKbAP7VnLik8SlSWj/view?usp=sharing',
    },
    {
       id: 'data-analytics',
@@ -37,7 +37,7 @@ const competitions = [
       themeColor: 'var(--tf-amber)',
       prizePool: 'Rp 3.250.000',
       guidebookUrl:
-         '',
+         'https://drive.google.com/file/d/1tmJiXvbRteM8RCrRu9rsfl3zriAfVy6m/view?usp=sharing',
    },
 ]
 
@@ -129,7 +129,7 @@ const Competitions = () => {
                               >
                                  Guidebook
                               </a>
-                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfovXbW9HcBnXhqgSE_lcQiw4ZKI9WlQr_ccDPnc1F-tmqp0g/viewform?usp=publish-editor" className="competition-card__button">
+                              <a href="https://bit.ly/EarlyBirdRegistrationTechfest2026" className="competition-card__button">
                                  Register
                               </a>
                            </aside>

@@ -2,7 +2,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { CalendarIcon, LocationIcon, RightArrowIcon } from '../components/icon'
 import { CityBackdrop, CitySkyline, LightGradient, MobileCityBackdrop, MobileCityLayer, MobileCitySkyline } from '../components/graphics'
-import speakerImage from '../assets/image.png'
+import speakerImage from '../assets/FotoPembicara.png'
+import webinarImage from '../assets/FotoPembicara2.png'
 
 const Techtalk = () => {
   return (
@@ -46,7 +47,7 @@ const Techtalk = () => {
                   </span>
                   <div>
                     <p className="text-sm text-white">25 Juli 2026</p>
-                    <p className="mt-1 text-xs text-white/50">TBA</p>
+                    <p className="mt-1 text-xs text-white/50">13:40 - 16:05 WIB</p>
                   </div>
                 </div>
 
@@ -62,7 +63,7 @@ const Techtalk = () => {
               </div>
 
               <a
-                href="/register"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScbQQtXallDB580tCHRmaC_PF5owmGTdS_xgimhv2cvjntEsA/viewform"
                 className="font-orbitron relative mt-8 inline-flex min-h-12 w-full max-w-[280px] items-center justify-center gap-3 overflow-hidden rounded bg-[linear-gradient(100deg,#10BFC4_0%,#12BFCC_48%,#27C5D7_78%,#62D4DF_100%)] px-5 text-base font-bold text-[#03122a] shadow-[0_0_24px_rgba(5,186,221,0.24)] transition duration-300 hover:translate-y-[-2px] hover:shadow-[0_0_34px_rgba(5,186,221,0.4)] md:max-w-[320px] md:px-7 md:text-lg"
               >
                 <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,17,60,0.16)_0%,rgba(0,17,60,0)_48%)]" />
@@ -72,29 +73,90 @@ const Techtalk = () => {
               </a>
             </div>
 
-            <div className="mx-auto hidden w-full max-w-[430px] md:block lg:mr-8">
-              <article className="relative min-h-[560px] overflow-hidden rounded-b-2xl border border-[#2B4871] bg-[#020817] shadow-[0_28px_70px_rgba(0,0,0,0.42)]">
+            <div className="mx-auto mt-10 w-full max-w-[430px] md:mt-0 lg:mr-8">
+              <article className="relative min-h-[420px] overflow-hidden rounded-b-2xl border border-[#2B4871] bg-[#020817] shadow-[0_28px_70px_rgba(0,0,0,0.42)] md:min-h-[560px]">
                 <img
                   src={speakerImage}
                   alt=""
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(0,0,0,0.1)_100%)]" />
-                <div className="absolute right-5 top-5 h-28 w-16 border-r-2 border-t-2 border-[#00C7C0]" />
+                <div className="absolute right-4 top-4 h-20 w-12 border-r-2 border-t-2 border-[#00C7C0] md:right-5 md:top-5 md:h-28 md:w-16" />
 
-                <div className="absolute bottom-10 left-7 right-7">
-                  <span className="mb-4 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white">
-                    Our Speaker
-                  </span>
-                  <h2 className="mt-4 text-[20px] leading-tight text-white">TBA</h2>
-                  <div className="absolute -bottom-4 -left-4 h-16 w-16 border-l-2 border-b-2 border-[#00C7C0]" />
-                  <p className="max-w-[300px] text-[11px] font-bold leading-5 text-[#05d4df]">
-                    "Beyond the Campus Lab: 
-                    <br />
-                    Bridging Academic Code to Industry Reality"
-                  </p>
+                <div className="absolute bottom-6 left-4 right-4 md:bottom-10 md:left-7 md:right-7">
+                  <div className="relative max-w-[340px] rounded-2xl border border-white/10 bg-[#020817]/45 px-3 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.24)] backdrop-blur-md md:px-4 md:py-4">
+                    <span className="mb-3 inline-flex bg-[#FF5481] px-2 text-[8px] font-bold uppercase tracking-[0.14em] text-white md:mb-4">
+                      Our Speaker
+                    </span>
+                    <h2 className="mt-3 text-[18px] leading-tight text-white md:mt-4 md:text-[20px]">Yoel Gogo Panjaitan</h2>
+                    <p className="mt-1 text-[10px] text-white/80 md:text-[11px]">Senior Technology Analyst at Deloitte</p>
+                    <p className="mt-2 max-w-[300px] text-[10px] font-bold leading-4 text-[#05d4df] md:mt-3 md:text-[11px] md:leading-5">
+                      "Beyond the Campus Lab: 
+                      <br />
+                      Bridging Academic Code to Industry Reality"
+                    </p>
+                    <div className="absolute -bottom-3 -left-3 h-12 w-12 border-l-2 border-b-2 border-[#00C7C0] md:-bottom-4 md:-left-4 md:h-16 md:w-16" />
+                  </div>
                 </div>
               </article>
+            </div>
+          </div>
+
+          <div className="relative z-10 mx-auto mt-14 w-full max-w-6xl pb-2 sm:pb-8 lg:mt-6">
+            <div className="grid overflow-hidden rounded-3xl border border-[#2B4871]/80 bg-[#020817]/55 shadow-[0_24px_70px_rgba(0,0,0,0.34)] backdrop-blur-md lg:grid-cols-[1fr_1.05fr]">
+              <div className="flex flex-col justify-center gap-5 px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+                <div>
+                  <h2 className="font-orbitron text-[30px] font-bold uppercase leading-[0.9] text-white sm:text-[38px] lg:text-[46px]">
+                    Webinar
+                    <span className="mt-1 block text-[#00C7C0]">TechTalk</span>
+                  </h2>
+                  <p className="mt-4 max-w-[520px] text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
+                    Sesi webinar online ini dibuka untuk umum sebagai pengantar sebelum acara utama.
+                  </p>
+
+                  <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Webinar Speaker</p>
+                    <h3 className="mt-2 text-lg font-semibold text-white sm:text-xl">Salomo Hendrian Sudjono</h3>
+                    <p className="mt-1 text-sm text-white/75">Artificial Intelligence Engineer at PT Berlian Sistem Informasi</p>
+                    <p className="mt-3 text-sm font-bold leading-6 text-[#05d4df]">
+                      Theme: The Complete Tech Innovator: Connecting the Dots between Data, Design, and Defense
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid gap-3 text-left sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Date</p>
+                    <p className="mt-2 text-sm font-medium text-white">6 Juli 2026</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Format</p>
+                    <p className="mt-2 text-sm font-medium text-white">Online Webinar</p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdozepjyB1oeNLe5hK2XGxTQ8u54C14UQETOGbUywSrV9Cmng/viewform"
+                  className="font-orbitron relative inline-flex min-h-12 w-full max-w-[320px] items-center justify-center gap-3 overflow-hidden rounded bg-[linear-gradient(100deg,#10BFC4_0%,#12BFCC_48%,#27C5D7_78%,#62D4DF_100%)] px-5 text-base font-bold text-[#03122a] shadow-[0_0_24px_rgba(5,186,221,0.24)] transition duration-300 hover:translate-y-[-2px] hover:shadow-[0_0_34px_rgba(5,186,221,0.4)]"
+                >
+                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,17,60,0.16)_0%,rgba(0,17,60,0)_48%)]" />
+                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(165deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0)_38%,rgba(255,255,255,0.36)_62%,rgba(255,255,255,0.16)_76%,rgba(255,255,255,0)_100%)]" />
+                  <span className="relative z-10 whitespace-nowrap">Register for Webinar</span>
+                  <RightArrowIcon className="relative z-10 h-6 w-6 shrink-0" />
+                </a>
+              </div>
+
+              <div className="relative min-h-[280px] overflow-hidden lg:min-h-[360px]">
+                <img
+                  src={webinarImage}
+                  alt="Webinar TechTalk speaker"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12)_0%,rgba(0,0,0,0.2)_36%,rgba(0,0,0,0.55)_100%)]" />
+                <div className="absolute left-5 top-5 rounded-full border border-[#00C7C0]/40 bg-[#020817]/55 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#00C7C0] backdrop-blur-sm">
+                  Webinar Session
+                </div>
+              </div>
             </div>
           </div>
         </section>
