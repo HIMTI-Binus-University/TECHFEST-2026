@@ -163,7 +163,7 @@ const Navbar = () => {
         
           <div className="pt-6">
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfovXbW9HcBnXhqgSE_lcQiw4ZKI9WlQr_ccDPnc1F-tmqp0g/viewform" 
+              href="https://bit.ly/EarlyBirdRegistrationTechfest2026" 
               onClick={toggleMenu}
               className="block w-full text-center text-white bg-[#ff0055] border-2 border-[#ff0055] rounded-xl px-8 py-4 font-bold tracking-widest text-lg shadow-[0_0_20px_rgba(255,0,85,0.4)] active:scale-95 transition-transform"
             >

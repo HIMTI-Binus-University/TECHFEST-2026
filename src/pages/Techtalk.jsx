@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import { CalendarIcon, LocationIcon, RightArrowIcon } from '../components/icon'
 import { CityBackdrop, CitySkyline, LightGradient, MobileCityBackdrop, MobileCityLayer, MobileCitySkyline } from '../components/graphics'
 import speakerImage from '../assets/FotoPembicara.png'
+import webinarImage from '../assets/FotoPembicara2.png'
 
 const Techtalk = () => {
   return (
@@ -98,6 +99,64 @@ const Techtalk = () => {
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+
+          <div className="relative z-10 mx-auto mt-14 w-full max-w-6xl pb-2 sm:pb-8 lg:mt-6">
+            <div className="grid overflow-hidden rounded-3xl border border-[#2B4871]/80 bg-[#020817]/55 shadow-[0_24px_70px_rgba(0,0,0,0.34)] backdrop-blur-md lg:grid-cols-[1fr_1.05fr]">
+              <div className="flex flex-col justify-center gap-5 px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+                <div>
+                  <h2 className="font-orbitron text-[30px] font-bold uppercase leading-[0.9] text-white sm:text-[38px] lg:text-[46px]">
+                    Webinar
+                    <span className="mt-1 block text-[#00C7C0]">TechTalk</span>
+                  </h2>
+                  <p className="mt-4 max-w-[520px] text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
+                    Sesi webinar online ini dibuka untuk umum sebagai pengantar sebelum acara utama.
+                  </p>
+
+                  <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Webinar Speaker</p>
+                    <h3 className="mt-2 text-lg font-semibold text-white sm:text-xl">Salomo Hendrian Sudjono</h3>
+                    <p className="mt-1 text-sm text-white/75">Artificial Intelligence Engineer at PT Berlian Sistem Informasi</p>
+                    <p className="mt-3 text-sm font-bold leading-6 text-[#05d4df]">
+                      Theme: The Complete Tech Innovator: Connecting the Dots between Data, Design, and Defense
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid gap-3 text-left sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Date</p>
+                    <p className="mt-2 text-sm font-medium text-white">6 Juli 2026</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-white/45">Format</p>
+                    <p className="mt-2 text-sm font-medium text-white">Online Webinar</p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdozepjyB1oeNLe5hK2XGxTQ8u54C14UQETOGbUywSrV9Cmng/viewform"
+                  className="font-orbitron relative inline-flex min-h-12 w-full max-w-[320px] items-center justify-center gap-3 overflow-hidden rounded bg-[linear-gradient(100deg,#10BFC4_0%,#12BFCC_48%,#27C5D7_78%,#62D4DF_100%)] px-5 text-base font-bold text-[#03122a] shadow-[0_0_24px_rgba(5,186,221,0.24)] transition duration-300 hover:translate-y-[-2px] hover:shadow-[0_0_34px_rgba(5,186,221,0.4)]"
+                >
+                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(0,17,60,0.16)_0%,rgba(0,17,60,0)_48%)]" />
+                  <span className="pointer-events-none absolute inset-0 bg-[linear-gradient(165deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0)_38%,rgba(255,255,255,0.36)_62%,rgba(255,255,255,0.16)_76%,rgba(255,255,255,0)_100%)]" />
+                  <span className="relative z-10 whitespace-nowrap">Register for Webinar</span>
+                  <RightArrowIcon className="relative z-10 h-6 w-6 shrink-0" />
+                </a>
+              </div>
+
+              <div className="relative min-h-[280px] overflow-hidden lg:min-h-[360px]">
+                <img
+                  src={webinarImage}
+                  alt="Webinar TechTalk speaker"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.12)_0%,rgba(0,0,0,0.2)_36%,rgba(0,0,0,0.55)_100%)]" />
+                <div className="absolute left-5 top-5 rounded-full border border-[#00C7C0]/40 bg-[#020817]/55 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#00C7C0] backdrop-blur-sm">
+                  Webinar Session
+                </div>
+              </div>
             </div>
           </div>
         </section>
