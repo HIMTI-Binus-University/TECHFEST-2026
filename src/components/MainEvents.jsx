@@ -1,8 +1,8 @@
 import { useRef } from 'react'
 import './MainEvents.css'
-import ctfImage from '../assets/ctf.jpg'
-import dataAnalyticsImage from '../assets/dataanalytics.jpg'
-import uiuxImage from '../assets/uiux.jpg'
+import ctfImage from '../assets/ctf.png'
+import dataAnalyticsImage from '../assets/dataanalytics.png'
+import uiuxImage from '../assets/uiux.png'
 
 const mainEvents = [
   {
