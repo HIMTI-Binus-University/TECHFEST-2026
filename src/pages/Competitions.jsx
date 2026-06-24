@@ -25,7 +25,7 @@ const competitions = [
       themeColor: 'var(--tf-cyan)',
       prizePool: 'Rp 3.250.000',
       guidebookUrl:
-         'https://drive.google.com/file/d/1fafIVzs07zO3d5EyKbAP7VnLik8SlSWj/view?usp=sharing',
+         'https://drive.google.com/file/d/1dNXXSfObQ3zQ4TjFfsjX_6EZubUPCpc-/view?usp=sharing',
    },
    {
       id: 'data-analytics',
