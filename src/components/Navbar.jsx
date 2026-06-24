@@ -89,7 +89,7 @@ const Navbar = () => {
                 TECHTALK
               </Link>
               <a 
-                href="https://bit.ly/EarlyBirdRegistrationTechfest2026" 
+                href="https://bit.ly/RegistrationTechfest2026" 
                 className="ml-4 text-[#ff0055] border-2 border-[#ff0055] rounded-full px-6 py-2 font-bold tracking-widest text-sm hover:bg-[#ff0055] hover:text-white hover:shadow-[0_0_15px_rgba(255,0,85,0.5)] transition-all duration-300"
               >
                 REGISTER
@@ -163,7 +163,7 @@ const Navbar = () => {
         
           <div className="pt-6">
             <a 
-              href="https://bit.ly/EarlyBirdRegistrationTechfest2026" 
+              href="https://bit.ly/RegistrationTechfest2026" 
               onClick={toggleMenu}
               className="block w-full text-center text-white bg-[#ff0055] border-2 border-[#ff0055] rounded-xl px-8 py-4 font-bold tracking-widest text-lg shadow-[0_0_20px_rgba(255,0,85,0.4)] active:scale-95 transition-transform"
             >

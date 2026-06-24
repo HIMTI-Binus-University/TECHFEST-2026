@@ -129,7 +129,7 @@ const Competitions = () => {
                               >
                                  Guidebook
                               </a>
-                              <a href="https://bit.ly/EarlyBirdRegistrationTechfest2026" className="competition-card__button">
+                              <a href="https://bit.ly/RegistrationTechfest2026" className="competition-card__button">
                                  Register
                               </a>
                            </aside>
