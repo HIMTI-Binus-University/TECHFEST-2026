@@ -13,7 +13,7 @@ const competitions = [
       themeColor: 'var(--tf-pink)',
       prizePool: 'Rp 2.250.000',
       guidebookUrl:
-         'https://drive.google.com/file/d/1Gz3Nju8oNwhO7N3PZIENA6NNh_jpflMl/view?usp=sharing',
+         'https://drive.google.com/file/d/1-z8aeT8M8sBiXXI9E5IMhWnN1MAzMPLL/view?usp=drive_link',
    },
    {
       id: 'capture-the-flag',
@@ -25,7 +25,7 @@ const competitions = [
       themeColor: 'var(--tf-cyan)',
       prizePool: 'Rp 3.250.000',
       guidebookUrl:
-         'https://drive.google.com/file/d/1dNXXSfObQ3zQ4TjFfsjX_6EZubUPCpc-/view?usp=sharing',
+         'https://drive.google.com/file/d/13TCj-OJPdEI4QP9gqd_FeSZoC74AmHhp/view?usp=drive_link',
    },
    {
       id: 'data-analytics',
@@ -37,7 +37,7 @@ const competitions = [
       themeColor: 'var(--tf-amber)',
       prizePool: 'Rp 3.250.000',
       guidebookUrl:
-         'https://drive.google.com/file/d/1tmJiXvbRteM8RCrRu9rsfl3zriAfVy6m/view?usp=sharing',
+         'https://drive.google.com/file/d/12LYDStMwpxiL0ylN5QYAZGiPhB1563rL/view?usp=drive_link',
    },
 ]
 
