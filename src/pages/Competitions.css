@@ -448,6 +448,15 @@
   margin-top: 10px;
 }
 
+.competitions-wrapper .partners-section__logo {
+  width: min(420px, 78vw);
+  max-width: 100%;
+  height: auto;
+  margin-top: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.12));
+}
+
 .competitions-wrapper .partners-section__group--media {
   margin-top: 328px;
 }
@@ -744,6 +753,11 @@
     margin-top: 230px;
   }
 
+  .competitions-wrapper .partners-section__logo {
+    width: min(280px, 84vw);
+    margin-top: 22px;
+  }
+
   .competitions-wrapper .neon-stroke--light {
     font-size: 2rem;
     -webkit-text-stroke-width: 1px;
@@ -797,5 +811,10 @@
 
   .competitions-wrapper .neon-stroke--light {
     font-size: 1.56rem;
+  }
+
+  .competitions-wrapper .partners-section__logo {
+    width: min(240px, 84vw);
+    margin-top: 18px;
   }
 }

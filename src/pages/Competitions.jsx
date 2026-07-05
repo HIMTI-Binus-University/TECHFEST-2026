@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import dewawebLogo from '../assets/dewaweb-horizontal-logo-monochrome-white.png'
 import './Competitions.css'
 
 const competitions = [
@@ -138,7 +139,7 @@ const Competitions = () => {
                   </div>
                </section>
 
-               {/*
+               
                <section
                   className="partners-section"
                   aria-label="Sponsors and media partners"
@@ -147,17 +148,22 @@ const Competitions = () => {
                      <div className="partners-section__group partners-section__group--sponsors">
                         <h2 className="neon-stroke neon-stroke--light">SPONSORS</h2>
                         <span className="section-accent section-accent--pink" />
+                        <img
+                           className="partners-section__logo"
+                           src={dewawebLogo}
+                           alt="Dewaweb"
+                        />
                      </div>
 
-                     <div className="partners-section__group partners-section__group--media">
+                     {/* <div className="partners-section__group partners-section__group--media">
                         <h2 className="neon-stroke neon-stroke--light">
                            MEDIA PARTNER
                         </h2>
                         <span className="section-accent section-accent--amber" />
-                     </div>
+                     </div> */}
                   </div>
                </section>
-               */}
+              
             </div>
          </main>
 
