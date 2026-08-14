@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Timeline from '../components/Timeline'
 import About from '../components/About'
 import MainEvents from '../components/MainEvents'
+import Sponsors from '../components/Sponsors'
 import Footer from '../components/Footer'
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
         <Hero />
         <About />
         <MainEvents />
+        <Sponsors />
         <Timeline />
       </main>
 
